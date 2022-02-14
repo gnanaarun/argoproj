@@ -16,3 +16,9 @@ container_name = bcaictnr
 key = storage.tfstate
 }
 }
+
+##Creation of Resource Group
+resource "azurerm_resource_group" "ocbirg" {
+name = bcaitest-rg
+location = Southeast Asia
+}
